@@ -14,6 +14,6 @@ function destructivelyUpdateDriverWithKeyAndValue(driver, key, value){
 
 function deleteDriverWithKey(driver, key){
   let new_array = {...driver};
-  new_array[key] = value;
+  delete new_array[key];
   return new_array;
 }
